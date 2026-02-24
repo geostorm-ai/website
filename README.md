@@ -1,13 +1,26 @@
-# Astro with Tailwind
+# GeoStorm Website
 
-```sh
-pnpm create astro@latest -- --template with-tailwindcss
+> Looking for the main GeoStorm project? Head to **[geostorm-ai/geostorm](https://github.com/geostorm-ai/geostorm)**.
+
+This is the landing page website for [GeoStorm](https://github.com/geostorm-ai/geostorm), built with Astro, React, Tailwind CSS, and Shadcn UI.
+
+## Development
+
+```bash
+pnpm install
+pnpm dev
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/with-tailwindcss/devcontainer.json)
+## Build
 
-Astro comes with [Tailwind](https://tailwindcss.com) support out of the box. This example showcases how to style your Astro project with Tailwind.
+```bash
+pnpm build
+pnpm preview
+```
 
-For complete setup instructions, please see our [Tailwind Styling Guide](https://docs.astro.build/en/guides/styling/#tailwind).
+## Linting
+
+```bash
+pnpm check    # lint
+pnpm format   # auto-fix
+```
