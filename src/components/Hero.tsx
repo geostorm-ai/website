@@ -62,19 +62,16 @@ export function Hero() {
 						</div>
 						<div className="p-6 font-mono text-sm leading-relaxed">
 							<div className="text-muted-foreground">
-								<span className="text-accent">$</span> git clone
-								git@github.com:geostorm-ai/geostorm.git
+								<span className="text-accent">$</span> docker run -d -p 8080:8080 -v
+								geostorm-data:/app/data
 							</div>
-							<div className="text-muted-foreground">
-								<span className="text-accent">$</span> cd geostorm
-							</div>
-							<div className="text-muted-foreground">
-								<span className="text-accent">$</span> docker compose up -d
+							<div className="text-muted-foreground pl-4">
+								--name geostorm ghcr.io/geostorm-ai/geostorm
 							</div>
 							<div className="mt-3 text-green-400">
 								&#10003; GeoStorm running at http://localhost:8080
 							</div>
-							<div className="text-green-400">&#10003; Sample data loaded (90 days)</div>
+							<div className="text-green-400">&#10003; Demo data loaded (90 days)</div>
 						</div>
 					</div>
 				</div>

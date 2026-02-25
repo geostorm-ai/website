@@ -23,8 +23,8 @@ function CopyButton({ text }: { text: string }) {
 	);
 }
 
-const cloneCommand = "git clone git@github.com:geostorm-ai/geostorm.git && cd geostorm";
-const runCommand = "docker compose up -d";
+const runCommand =
+	"docker run -d -p 8080:8080 -v geostorm-data:/app/data --name geostorm ghcr.io/geostorm-ai/geostorm";
 
 export function Quickstart() {
 	return (
@@ -45,26 +45,7 @@ export function Quickstart() {
 								<span className="flex h-7 w-7 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
 									1
 								</span>
-								<h3 className="font-semibold">Clone the repository</h3>
-							</div>
-							<div className="overflow-hidden rounded-lg border border-border/50 bg-card">
-								<div className="flex items-center justify-between border-b border-border/50 bg-muted/50 px-4 py-2">
-									<span className="font-mono text-xs text-muted-foreground">bash</span>
-									<CopyButton text={cloneCommand} />
-								</div>
-								<pre className="overflow-x-auto p-4 font-mono text-sm">
-									<code>{cloneCommand}</code>
-								</pre>
-							</div>
-						</div>
-
-						{/* Step 2 */}
-						<div>
-							<div className="mb-2 flex items-center gap-3">
-								<span className="flex h-7 w-7 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
-									2
-								</span>
-								<h3 className="font-semibold">Start with Docker Compose</h3>
+								<h3 className="font-semibold">Run GeoStorm</h3>
 							</div>
 							<div className="overflow-hidden rounded-lg border border-border/50 bg-card">
 								<div className="flex items-center justify-between border-b border-border/50 bg-muted/50 px-4 py-2">
@@ -77,11 +58,11 @@ export function Quickstart() {
 							</div>
 						</div>
 
-						{/* Step 3 */}
+						{/* Step 2 */}
 						<div>
 							<div className="mb-2 flex items-center gap-3">
 								<span className="flex h-7 w-7 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
-									3
+									2
 								</span>
 								<h3 className="font-semibold">Open the dashboard</h3>
 							</div>
@@ -90,16 +71,16 @@ export function Quickstart() {
 								<code className="rounded bg-muted px-1.5 py-0.5 text-sm font-medium text-foreground">
 									http://localhost:8080
 								</code>{" "}
-								— 90 days of synthetic sample data is pre-loaded so you can explore the full
-								interface immediately.
+								— a demo project with 90 days of synthetic monitoring data is ready to explore
+								immediately.
 							</p>
 						</div>
 
-						{/* Step 4 */}
+						{/* Step 3 */}
 						<div>
 							<div className="mb-2 flex items-center gap-3">
 								<span className="flex h-7 w-7 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
-									4
+									3
 								</span>
 								<h3 className="font-semibold">Configure for production</h3>
 							</div>
@@ -113,8 +94,8 @@ export function Quickstart() {
 								>
 									OpenRouter
 								</a>{" "}
-								API key in Settings, create a project, and configure the queries you want to
-								monitor. Scheduled monitoring runs automatically.
+								API key, create a project, and configure the queries you want to monitor. Scheduled
+								monitoring runs automatically.
 							</p>
 						</div>
 					</div>
@@ -125,7 +106,7 @@ export function Quickstart() {
 						<ul className="space-y-2 text-sm text-muted-foreground">
 							<li className="flex items-center gap-2">
 								<Check className="h-4 w-4 text-green-500" />
-								Docker & Docker Compose
+								Docker
 							</li>
 							<li className="flex items-center gap-2">
 								<Check className="h-4 w-4 text-green-500" />
