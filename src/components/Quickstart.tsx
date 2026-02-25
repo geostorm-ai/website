@@ -110,7 +110,7 @@ export function Quickstart() {
 							</li>
 							<li className="flex items-center gap-2">
 								<Check className="h-4 w-4 text-green-500" />
-								OpenRouter API key (for production monitoring)
+								OpenRouter API key (for monitoring)
 							</li>
 							<li className="flex items-center gap-2">
 								<Check className="h-4 w-4 text-green-500" />
