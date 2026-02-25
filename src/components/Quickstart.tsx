@@ -82,7 +82,7 @@ export function Quickstart() {
 								<span className="flex h-7 w-7 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
 									3
 								</span>
-								<h3 className="font-semibold">Configure for production</h3>
+								<h3 className="font-semibold">Start monitoring</h3>
 							</div>
 							<p className="ml-10 text-muted-foreground">
 								Add your{" "}
@@ -94,8 +94,8 @@ export function Quickstart() {
 								>
 									OpenRouter
 								</a>{" "}
-								API key, create a project, and configure the queries you want to monitor. Scheduled
-								monitoring runs automatically.
+								API key, create a project, and start tracking what LLMs are saying about your
+								software. Monitoring runs automatically on a schedule.
 							</p>
 						</div>
 					</div>
