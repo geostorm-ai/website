@@ -26,7 +26,7 @@ export function Hero() {
 					</h1>
 
 					<p className="mx-auto mb-10 max-w-2xl text-lg text-muted-foreground md:text-xl">
-						Track how AI models like ChatGPT, Claude, and Gemini perceive, recommend, and rank your
+						Track how AI models like GPT, Claude, and Gemini perceive, recommend, and rank your
 						software. Get alerts when your positioning changes.
 					</p>
 
