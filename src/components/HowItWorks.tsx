@@ -7,7 +7,7 @@ const steps = [
 		step: "01",
 		title: "Deploy with Docker",
 		description:
-			"Single command deployment. Clone the repo, run docker compose up, and you're live. No complex infrastructure needed.",
+			"Single command deployment. Run one docker command and you're live. No git clone, no build step, no complex infrastructure needed.",
 	},
 	{
 		icon: Cog,

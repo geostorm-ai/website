@@ -6,7 +6,7 @@ const features = [
 		icon: Eye,
 		title: "Perception Tracking",
 		description:
-			"See how AI models describe and position your software relative to competitors across ChatGPT, Claude, Gemini, and more.",
+			"See how AI models describe and position your software relative to competitors across GPT, Claude, Gemini, and more.",
 	},
 	{
 		icon: Bell,
