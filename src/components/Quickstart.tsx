@@ -26,6 +26,8 @@ function CopyButton({ text }: { text: string }) {
 const runCommand =
 	"docker run -d -p 8080:8080 -v geostorm-data:/app/data --name geostorm ghcr.io/geostorm-ai/geostorm";
 
+const mcpCommand = "claude mcp add --transport http geostorm http://localhost:8080/mcp/";
+
 export function Quickstart() {
 	return (
 		<section id="quickstart" className="py-20 md:py-32">
@@ -94,9 +96,35 @@ export function Quickstart() {
 								>
 									OpenRouter
 								</a>{" "}
-								API key, create a project, and start tracking what LLMs are saying about your
-								software. Monitoring runs automatically on a schedule.
+								API key in the settings page, create a project, and GeoStorm starts monitoring on a
+								schedule. One key gives you access to GPT, Claude, Gemini, and more.
 							</p>
+						</div>
+
+						{/* Step 4 */}
+						<div>
+							<div className="mb-2 flex items-center gap-3">
+								<span className="flex h-7 w-7 items-center justify-center rounded-full bg-muted text-xs font-bold text-muted-foreground">
+									4
+								</span>
+								<h3 className="font-semibold">
+									Connect Claude Code{" "}
+									<span className="text-sm font-normal text-muted-foreground">(optional)</span>
+								</h3>
+							</div>
+							<p className="ml-10 mb-3 text-muted-foreground">
+								Query your perception data conversationally — ask things like "Show me perception
+								scores" or "Are there any alerts I should know about?"
+							</p>
+							<div className="ml-10 overflow-hidden rounded-lg border border-border/50 bg-card">
+								<div className="flex items-center justify-between border-b border-border/50 bg-muted/50 px-4 py-2">
+									<span className="font-mono text-xs text-muted-foreground">bash</span>
+									<CopyButton text={mcpCommand} />
+								</div>
+								<pre className="overflow-x-auto p-4 font-mono text-sm">
+									<code>{mcpCommand}</code>
+								</pre>
+							</div>
 						</div>
 					</div>
 

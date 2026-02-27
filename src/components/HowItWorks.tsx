@@ -7,28 +7,28 @@ const steps = [
 		step: "01",
 		title: "Deploy with Docker",
 		description:
-			"Single command deployment. Run one docker command and you're live. No git clone, no build step, no complex infrastructure needed.",
+			"One command and you're live. No git clone, no build step, no API keys needed upfront. A demo project with 90 days of synthetic monitoring data is ready to explore immediately.",
 	},
 	{
 		icon: Cog,
 		step: "02",
 		title: "Configure Monitoring",
 		description:
-			"Add your OpenRouter API key, create a project, and define the queries and competitors you want to track across AI models.",
+			"Add your OpenRouter API key in the settings page — one key gives you access to GPT, Claude, Gemini, and more. Create a project and GeoStorm starts monitoring.",
 	},
 	{
 		icon: BarChart3,
 		step: "03",
 		title: "Track Perception",
 		description:
-			"GeoStorm automatically polls AI models on a schedule, collecting recommendation data and tracking your position over time.",
+			"GeoStorm automatically polls AI models on a schedule, tracking your recommendation share and positioning over time. Deterministic code, predictable costs.",
 	},
 	{
 		icon: Bell,
 		step: "04",
 		title: "Get Alerted",
 		description:
-			"Receive alerts via Slack, email, or webhooks when significant changes occur — competitor emergence, share drops, or model divergence.",
+			"Receive alerts via Slack, email, or webhooks when something changes — a new competitor appears, your ranking drops, or a model stops mentioning you.",
 	},
 ];
 

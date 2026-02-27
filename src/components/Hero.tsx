@@ -26,8 +26,9 @@ export function Hero() {
 					</h1>
 
 					<p className="mx-auto mb-10 max-w-2xl text-lg text-muted-foreground md:text-xl">
-						Track how AI models like GPT, Claude, and Gemini perceive, recommend, and rank your
-						software. Get alerts when your positioning changes.
+						Developers discover tools by asking AI. GeoStorm monitors how GPT, Claude, Gemini, and
+						Perplexity perceive and recommend your software — and alerts you when a competitor
+						appears, your ranking drops, or a model stops mentioning you.
 					</p>
 
 					<div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
