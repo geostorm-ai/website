@@ -35,6 +35,12 @@ export function Navbar() {
 						Quickstart
 					</a>
 					<a
+						href="#faq"
+						className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+					>
+						FAQ
+					</a>
+					<a
 						href="https://github.com/geostorm-ai/geostorm"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -72,6 +78,9 @@ export function Navbar() {
 						</a>
 						<a href="#quickstart" className="text-sm font-medium text-muted-foreground">
 							Quickstart
+						</a>
+						<a href="#faq" className="text-sm font-medium text-muted-foreground">
+							FAQ
 						</a>
 						<a
 							href="https://github.com/geostorm-ai/geostorm"

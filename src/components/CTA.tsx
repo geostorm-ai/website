@@ -14,10 +14,11 @@ export function CTA() {
 
 					<div className="relative">
 						<h2 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">
-							Start monitoring your AI visibility
+							Know what AI says about your software
 						</h2>
 						<p className="mx-auto mb-8 max-w-xl text-lg text-muted-foreground">
-							GeoStorm is free, open source, and self-hosted. Deploy in under a minute with Docker.
+							GeoStorm is free, open source, and self-hosted. One container, one command — deploy in
+							under a minute with Docker.
 						</p>
 						<div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
 							<a

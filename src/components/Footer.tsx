@@ -27,7 +27,13 @@ export function Footer() {
 
 				<div className="flex flex-col items-center justify-between gap-4 text-sm text-muted-foreground md:flex-row">
 					<p>MIT License. Built by the GeoStorm community.</p>
-					<p>Monitor how AI sees your software.</p>
+					<div className="flex items-center gap-4">
+						<a href="/privacy" className="transition-colors hover:text-foreground">
+							Privacy Policy
+						</a>
+						<span className="text-border">|</span>
+						<p>Monitor how AI sees your software.</p>
+					</div>
 				</div>
 			</div>
 		</footer>
