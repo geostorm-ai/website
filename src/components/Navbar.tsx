@@ -8,7 +8,7 @@ export function Navbar() {
 	const closeMobile = () => setMobileOpen(false);
 
 	return (
-		<nav className="fixed top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-xl">
+		<nav className="fixed top-0 z-50 w-full border-b border-white/5 bg-black/20 backdrop-blur-md">
 			<div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
 				<a href="/" className="flex items-center gap-2 text-lg font-bold tracking-tight">
 					<CloudLightning className="h-6 w-6 text-primary" />
